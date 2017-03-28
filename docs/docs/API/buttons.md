@@ -44,14 +44,14 @@ import { Button } from 'react-native-elements'
 | buttonStyle | none | object (style) | add additional styling for button component (optional) |
 | title | none | string | button title (required) |
 | large | false | boolean | makes button large |
-| fontFamily | System font (iOS), Roboto (android) | string | specify different font family |
+| fontFamily | System font (iOS), Sans Serif (android) | string | specify different font family |
 | fontWeight | none | string | specify font weight for title (optional) |
 | iconRight | false | boolean | moves icon to right of title |
 | onPress | none | function | onPress method (required) |
 | onLongPress | none | function | onLongPress method (optional) |
 | icon | {color: 'white'} | object {name: string, color: string, size: number, type: string (default is material, or choose one of material-community, simple-line-icon, zocial, font-awesome, octicon, ionicon, foundation, evilicon, or entypo), style: object(style)} | icon configuration (optional) |
 | backgroundColor | #397af8 | string (color) | background color of button (optional) |
-| borderRadius | none | number | adds border radius to card (optional) |
+| borderRadius | none | number | adds border radius to button (optional) |
 | color | white | string(color) | font color (optional) |
 | textStyle | none | object (style) | text styling (optional)  |
 | fontSize | 18 | number | font size (optional)  |
@@ -132,7 +132,7 @@ import { SocialIcon } from 'react-native-elements'
 | iconColor | white | string | icon color (optional) |
 | iconSize | 24 | number | icon size (optional) |
 | component | TouchableHighlight | React Native Component | type of button (optional)  |
-| fontFamily | System font bold (iOS), Roboto-Black (android) | string | specify different font family (optional) |
+| fontFamily | System font bold (iOS), Sans Serif Black (android) | string | specify different font family (optional) |
 | fontWeight | bold (ios), black(android) | string | specify font weight of title if set as a button with a title |
 | fontStyle | none | object (style) | specify text styling (optional) |
 | disabled | false | boolean | disable button (optional) |
@@ -199,4 +199,3 @@ import { Icon } from 'react-native-elements'
 | raised | false | boolean | adds box shadow to button (optional) |
 | containerStyle | inherited styling | object (style) | add styling to container holding icon (optional) |
 | reverseColor | white | string | specify reverse icon color (optional) |
-
