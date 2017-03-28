@@ -168,6 +168,17 @@
           
   <li class="md-nav__item">
     
+      <a href="../avatar/" title="Avatar" class="md-nav__link">
+        Avatar
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
       <a href="../button_group/" title="Button group" class="md-nav__link">
         Button group
       </a>
@@ -326,6 +337,17 @@
   </li>
 
         
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../tile/" title="Tile" class="md-nav__link">
+        Tile
+      </a>
+    
+  </li>
+
+        
       </ul>
     </nav>
   </li>
@@ -386,6 +408,12 @@ constructor () {
   this.toggleSideMenu = this.toggleSideMenu.bind(this)
 }
 
+onSideMenuChange (isOpen: boolean) {
+  this.setState({
+    isOpen: isOpen
+  })
+}
+
 toggleSideMenu () {
   this.setState({
     isOpen: !this.state.isOpen
@@ -415,6 +443,7 @@ render () {
   return (
     &lt;SideMenu
       isOpen={this.state.isOpen}
+      onChange={this.onSideMenuChange.bind(this)}
       menu={MenuComponent}&gt;
       &lt;App toggleSideMenu={this.toggleSideMenu.bind(this)} /&gt;
     &lt;/SideMenu&gt;

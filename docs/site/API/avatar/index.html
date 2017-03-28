@@ -15,7 +15,7 @@
     
     
       
-        <title>Pricing component - React Native Elements UI Toolkit</title>
+        <title>Avatar - React Native Elements UI Toolkit</title>
       
     
     
@@ -75,7 +75,7 @@
                 </span>
               
             
-            Pricing component
+            Avatar
           
         </span>
       </div>
@@ -168,9 +168,60 @@
           
   <li class="md-nav__item">
     
-      <a href="../avatar/" title="Avatar" class="md-nav__link">
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="toc">
         Avatar
-      </a>
+      </label>
+    
+    <a href="./" title="Avatar" class="md-nav__link md-nav__link--active">
+      Avatar
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#avatars" title="Avatars" class="md-nav__link">
+    Avatars
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#avatar-with-initials" title="Avatar with initials" class="md-nav__link">
+    Avatar with initials
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#avatar-with-icons" title="Avatar with icons" class="md-nav__link">
+    Avatar with icons
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#avatar-props" title="Avatar Props" class="md-nav__link">
+    Avatar Props
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
     
   </li>
 
@@ -256,39 +307,9 @@
           
   <li class="md-nav__item">
     
-    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="toc">
-    
-      
-    
-    
-      <label class="md-nav__link md-nav__link--active" for="toc">
+      <a href="../pricing_component/" title="Pricing component" class="md-nav__link">
         Pricing component
-      </label>
-    
-    <a href="./" title="Pricing component" class="md-nav__link md-nav__link--active">
-      Pricing component
-    </a>
-    
-      
-<nav class="md-nav md-nav--secondary">
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="toc">Table of contents</label>
-    <ul class="md-nav__list" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#pricingcard-props" title="PricingCard props" class="md-nav__link">
-    PricingCard props
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
+      </a>
     
   </li>
 
@@ -374,8 +395,29 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#pricingcard-props" title="PricingCard props" class="md-nav__link">
-    PricingCard props
+  <a href="#avatars" title="Avatars" class="md-nav__link">
+    Avatars
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#avatar-with-initials" title="Avatar with initials" class="md-nav__link">
+    Avatar with initials
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#avatar-with-icons" title="Avatar with icons" class="md-nav__link">
+    Avatar with icons
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#avatar-props" title="Avatar Props" class="md-nav__link">
+    Avatar Props
   </a>
   
 </li>
@@ -393,21 +435,105 @@
                
               
                 
-                <h1 id="pricing-component">Pricing Component</h1>
-<p><img alt="Pricing Component" src="http://i.imgur.com/EMMDZwo.png" /></p>
-<pre><code class="js">import { PricingCard } from 'react-native-elements'
-
-&lt;PricingCard
-  color='#4f9deb'
-  title='Free'
-  price='$0'
-  info={['1 User', 'Basic Support', 'All Core Features']}
-  button={{ title: 'GET STARTED', icon: 'flight-takeoff' }}
+                <h1 id="avatar">Avatar</h1>
+<p><img src="https://github.com/react-native-community/react-native-elements/blob/master/src/avatar/avatar_all.png" width="500" ></p>
+<h4 id="avatars">Avatars</h4>
+<p><img src="https://github.com/react-native-community/react-native-elements/blob/master/src/avatar/avatar_with_images.png" width="500" ></p>
+<pre><code class="js">&lt;Avatar
+  small
+  rounded
+  source={{uri: &quot;https://s3.amazonaws.com/uifaces/faces/twitter/ladylexy/128.jpg&quot;}}
+  onPress={() =&gt; console.log(&quot;Works!&quot;)}
+  activeOpacity={0.7}
 /&gt;
-
+&lt;Avatar
+  medium
+  source={{uri: &quot;https://s3.amazonaws.com/uifaces/faces/twitter/kfriedson/128.jpg&quot;}}
+  onPress={() =&gt; console.log(&quot;Works!&quot;)}
+  activeOpacity={0.7}
+/&gt;
+&lt;Avatar
+  large
+  source={{uri: &quot;https://s3.amazonaws.com/uifaces/faces/twitter/brynn/128.jpg&quot;}}
+  onPress={() =&gt; console.log(&quot;Works!&quot;)}
+  activeOpacity={0.7}
+/&gt;
+&lt;Avatar
+  xlarge
+  rounded
+  source={{uri: &quot;https://s3.amazonaws.com/uifaces/faces/twitter/adhamdannaway/128.jpg&quot;}}
+  onPress={() =&gt; console.log(&quot;Works!&quot;)}
+  activeOpacity={0.7}
+/&gt;
 </code></pre>
 
-<h4 id="pricingcard-props">PricingCard props</h4>
+<h4 id="avatar-with-initials">Avatar with initials</h4>
+<p><img src="https://github.com/react-native-community/react-native-elements/blob/master/src/avatar/avatar_with_initials.png" width="500" ></p>
+<pre><code class="js">&lt;Avatar
+  small
+  rounded
+  title=&quot;MT&quot;
+  onPress={() =&gt; console.log(&quot;Works!&quot;)}
+  activeOpacity={0.7}
+/&gt;
+&lt;Avatar
+  medium
+  title=&quot;BP&quot;
+  onPress={() =&gt; console.log(&quot;Works!&quot;)}
+  activeOpacity={0.7}
+/&gt;
+&lt;Avatar
+  large
+  title=&quot;LW&quot;
+  onPress={() =&gt; console.log(&quot;Works!&quot;)}
+  activeOpacity={0.7}
+/&gt;
+&lt;Avatar
+  xlarge
+  rounded
+  title=&quot;CR&quot;
+  onPress={() =&gt; console.log(&quot;Works!&quot;)}
+  activeOpacity={0.7}
+/&gt;
+</code></pre>
+
+<h4 id="avatar-with-icons">Avatar with icons</h4>
+<p><img src="https://github.com/react-native-community/react-native-elements/blob/master/src/avatar/avatar_with_icons.png" width="500" ></p>
+<pre><code class="js">&lt;Avatar
+  small
+  rounded
+  icon={{type: 'user'}}
+  onPress={() =&gt; console.log(&quot;Works!&quot;)}
+  activeOpacity={0.7}
+  containerStyle={{flex: 2, marginLeft: 20, marginTop: 115}}
+/&gt;
+&lt;Avatar
+  medium
+  overlayContainerStyle={{backgroundColor: 'blue'}}
+  icon={{type: 'meetup', color: 'red'}}
+  onPress={() =&gt; console.log(&quot;Works!&quot;)}
+  activeOpacity={0.7}
+  containerStyle={{flex: 3, marginTop: 100}}
+/&gt;
+&lt;Avatar
+  large
+  icon={{type: 'rocket', color: 'orange'}}
+  overlayContainerStyle={{backgroundColor: 'white'}}
+  onPress={() =&gt; console.log(&quot;Works!&quot;)}
+  activeOpacity={0.7}
+  containerStyle={{flex: 4, marginTop: 75}}
+/&gt;
+&lt;Avatar
+  xlarge
+  rounded
+  icon={{type: 'home'}}
+  onPress={() =&gt; console.log(&quot;Works!&quot;)}
+  activeOpacity={0.7}
+  containerStyle={{flex: 5, marginRight: 60}}
+/&gt;
+</code></pre>
+
+<h3 id="avatar-props">Avatar Props</h3>
 <table>
 <thead>
 <tr>
@@ -419,76 +545,94 @@
 </thead>
 <tbody>
 <tr>
-<td>title</td>
-<td>none</td>
-<td>string</td>
-<td>title (required)</td>
+<td>component</td>
+<td>TouchableOpacity</td>
+<td>function</td>
+<td>component for enclosing element (eg: TouchableHighlight, View, etc)</td>
 </tr>
 <tr>
-<td>price</td>
-<td>none</td>
-<td>string</td>
-<td>price (required)</td>
+<td>width</td>
+<td>34</td>
+<td>number</td>
+<td>width for the Avatar</td>
 </tr>
 <tr>
-<td>color</td>
-<td>none</td>
-<td>string</td>
-<td>color scheme for button &amp; title (required)</td>
+<td>height</td>
+<td>34</td>
+<td>number</td>
+<td>height for the Avatar</td>
 </tr>
 <tr>
-<td>info</td>
+<td>onPress</td>
 <td>none</td>
-<td>array of strings</td>
-<td>pricing information (optional)</td>
+<td>function</td>
+<td>callback function when pressing component</td>
 </tr>
 <tr>
-<td>button</td>
+<td>onLongPress</td>
 <td>none</td>
-<td>object {title, icon, buttonStyle}</td>
-<td>button information (required)</td>
-</tr>
-<tr>
-<td>onButtonPress</td>
-<td>none</td>
-<td>any</td>
-<td>function to be run when button is pressed</td>
+<td>function</td>
+<td>callback function when long pressing component</td>
 </tr>
 <tr>
 <td>containerStyle</td>
-<td>inherited styling</td>
+<td>none</td>
 <td>object (style)</td>
-<td>outer component styling (optional)</td>
+<td>styling for outer container</td>
 </tr>
 <tr>
-<td>wrapperStyle</td>
-<td>inherited styling</td>
+<td>source</td>
+<td>none</td>
+<td>object (image)</td>
+<td>image source</td>
+</tr>
+<tr>
+<td>avatarStyle</td>
+<td>none</td>
 <td>object (style)</td>
-<td>inner wrapper component styling (optional)</td>
+<td>style for avatar image</td>
 </tr>
 <tr>
-<td>titleFont</td>
-<td>System font (font weight 800) (iOS), Sans Serif Black (android)</td>
-<td>string</td>
-<td>specify title font family</td>
+<td>rounded</td>
+<td>false</td>
+<td>boolean</td>
+<td>determines the shape of avatar</td>
 </tr>
 <tr>
-<td>pricingFont</td>
-<td>System font (font weight 700) (iOS), Sans Serif Bold (android)</td>
+<td>title</td>
+<td>none</td>
 <td>string</td>
-<td>specify pricing font family</td>
+<td>renders title in the avatar</td>
 </tr>
 <tr>
-<td>infoFont</td>
-<td>System font bold (iOS), Sans Serif Bold (android)</td>
-<td>string</td>
-<td>specify pricing information font family</td>
+<td>titleStyle</td>
+<td>none</td>
+<td>object (style)</td>
+<td>style for the title</td>
 </tr>
 <tr>
-<td>buttonFont</td>
-<td>System font (iOS), Sans Serif (android)</td>
-<td>string</td>
-<td>specify button font family</td>
+<td>overlayContainerStyle</td>
+<td>none</td>
+<td>object (style)</td>
+<td>style for the view outside image or icon</td>
+</tr>
+<tr>
+<td>activeOpacity</td>
+<td>0.2</td>
+<td>number</td>
+<td>opacity when pressed</td>
+</tr>
+<tr>
+<td>icon</td>
+<td>none</td>
+<td>object {name: string, color: string, size: number, type: string (default is material, or choose one of material-community, simple-line-icon, zocial, font-awesome, octicon, ionicon, foundation, evilicon, or entypo), iconStyle: object(style)}</td>
+<td></td>
+</tr>
+<tr>
+<td>iconStyle</td>
+<td>none</td>
+<td>object (style)</td>
+<td>extra styling for icon component (optional)</td>
 </tr>
 </tbody>
 </table>
@@ -504,7 +648,7 @@
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid">
         
-          <a href="../lists/" title="Lists" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../HTML_style_headings/" title="HTML style headings" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-flex__cell md-flex__cell--shrink">
               <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
             </div>
@@ -513,19 +657,19 @@
                 <span class="md-footer-nav__direction">
                   Previous
                 </span>
-                Lists
+                HTML style headings
               </span>
             </div>
           </a>
         
         
-          <a href="../searchbar/" title="Searchbar" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="../button_group/" title="Button group" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
               <span class="md-flex__ellipsis">
                 <span class="md-footer-nav__direction">
                   Next
                 </span>
-                Searchbar
+                Button group
               </span>
             </div>
             <div class="md-flex__cell md-flex__cell--shrink">

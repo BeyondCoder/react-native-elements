@@ -168,6 +168,17 @@
           
   <li class="md-nav__item">
     
+      <a href="../avatar/" title="Avatar" class="md-nav__link">
+        Avatar
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
       <a href="../button_group/" title="Button group" class="md-nav__link">
         Button group
       </a>
@@ -368,6 +379,17 @@
   </li>
 
         
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../tile/" title="Tile" class="md-nav__link">
+        Tile
+      </a>
+    
+  </li>
+
+        
       </ul>
     </nav>
   </li>
@@ -458,7 +480,7 @@
                 <h1 id="lists">Lists</h1>
 <p><img alt="Lists" src="http://i.imgur.com/7V8CIfl.png" /></p>
 <h4 id="using-map-function-implemented-with-avatar">Using Map Function. Implemented with avatar.</h4>
-<pre><code>import { List, ListItem } from 'react-native-elements'
+<pre><code class="js">import { List, ListItem } from 'react-native-elements'
 
 const list = [
   {
@@ -674,7 +696,7 @@ styles = StyleSheet.create({
 <td>rightIcon</td>
 <td>{name: 'chevron-right'}</td>
 <td>object {name, color, style, type} (type defaults to material icons)</td>
-<td>icon configuration for right icon (optional). Shows up unless hideChevron or rightTitle is set</td>
+<td>icon configuration for right icon (optional). Shows up unless hideChevron is set</td>
 </tr>
 <tr>
 <td>onPress</td>
@@ -697,7 +719,7 @@ styles = StyleSheet.create({
 <tr>
 <td>subtitle</td>
 <td>none</td>
-<td>string or object</td>
+<td>string, number or object</td>
 <td>subtitle text or custom view (optional)</td>
 </tr>
 <tr>
@@ -715,7 +737,7 @@ styles = StyleSheet.create({
 <tr>
 <td>title</td>
 <td>none</td>
-<td>string or object</td>
+<td>string, number or object</td>
 <td>main title for list item, can be text or custom view (required)</td>
 </tr>
 <tr>
@@ -744,7 +766,7 @@ styles = StyleSheet.create({
 </tr>
 <tr>
 <td>fontFamily</td>
-<td>HelevticaNeue (iOS), Roboto (android)</td>
+<td>HelevticaNeue (iOS), Sans Serif (android)</td>
 <td>string</td>
 <td>specify different font family</td>
 </tr>
@@ -752,7 +774,7 @@ styles = StyleSheet.create({
 <td>rightTitle</td>
 <td>none</td>
 <td>string</td>
-<td>provide a rightTitle to have a title show up on the right side of the button, will override any icon on the right</td>
+<td>provide a rightTitle to have a title show up on the right side of the button</td>
 </tr>
 <tr>
 <td>rightTitleContainerStyle</td>
@@ -796,7 +818,7 @@ styles = StyleSheet.create({
 </tbody>
 </table>
 <p>Example badge usage</p>
-<pre><code>&lt;ListItem
+<pre><code class="js">&lt;ListItem
   ...
   badge={{ value: 3, badgeTextStyle: { color: 'orange' }, badgeContainerStyle: { marginTop: -20 } }}
 /&gt;

@@ -15,7 +15,7 @@
     
     
       
-        <title>Pricing component - React Native Elements UI Toolkit</title>
+        <title>Tile - React Native Elements UI Toolkit</title>
       
     
     
@@ -75,7 +75,7 @@
                 </span>
               
             
-            Pricing component
+            Tile
           
         </span>
       </div>
@@ -256,39 +256,9 @@
           
   <li class="md-nav__item">
     
-    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="toc">
-    
-      
-    
-    
-      <label class="md-nav__link md-nav__link--active" for="toc">
+      <a href="../pricing_component/" title="Pricing component" class="md-nav__link">
         Pricing component
-      </label>
-    
-    <a href="./" title="Pricing component" class="md-nav__link md-nav__link--active">
-      Pricing component
-    </a>
-    
-      
-<nav class="md-nav md-nav--secondary">
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="toc">Table of contents</label>
-    <ul class="md-nav__list" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#pricingcard-props" title="PricingCard props" class="md-nav__link">
-    PricingCard props
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
+      </a>
     
   </li>
 
@@ -341,9 +311,60 @@
           
   <li class="md-nav__item">
     
-      <a href="../tile/" title="Tile" class="md-nav__link">
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="toc">
         Tile
-      </a>
+      </label>
+    
+    <a href="./" title="Tile" class="md-nav__link md-nav__link--active">
+      Tile
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#featured-tile" title="Featured Tile" class="md-nav__link">
+    Featured Tile
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#featured-tile-with-icon" title="Featured Tile with Icon" class="md-nav__link">
+    Featured Tile with Icon
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tile-with-icon" title="Tile with Icon" class="md-nav__link">
+    Tile with Icon
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tile-props" title="Tile Props" class="md-nav__link">
+    Tile Props
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
     
   </li>
 
@@ -374,8 +395,29 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#pricingcard-props" title="PricingCard props" class="md-nav__link">
-    PricingCard props
+  <a href="#featured-tile" title="Featured Tile" class="md-nav__link">
+    Featured Tile
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#featured-tile-with-icon" title="Featured Tile with Icon" class="md-nav__link">
+    Featured Tile with Icon
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tile-with-icon" title="Tile with Icon" class="md-nav__link">
+    Tile with Icon
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tile-props" title="Tile Props" class="md-nav__link">
+    Tile Props
   </a>
   
 </li>
@@ -393,21 +435,46 @@
                
               
                 
-                <h1 id="pricing-component">Pricing Component</h1>
-<p><img alt="Pricing Component" src="http://i.imgur.com/EMMDZwo.png" /></p>
-<pre><code class="js">import { PricingCard } from 'react-native-elements'
-
-&lt;PricingCard
-  color='#4f9deb'
-  title='Free'
-  price='$0'
-  info={['1 User', 'Basic Support', 'All Core Features']}
-  button={{ title: 'GET STARTED', icon: 'flight-takeoff' }}
+                <h1 id="tile">Tile</h1>
+<p>A component with full size image and with text either inside the image or under the image along with customizable caption</p>
+<blockquote>
+<p>This component was inspired from <a href="https://github.com/shoutem/ui">Shoutem UI</a> by <a href="https://github.com/shoutem">Shoutem</a>. Check out <a href="http://shoutem.github.io/">Shoutem</a> if you haven't already!</p>
+</blockquote>
+<h4 id="featured-tile">Featured Tile</h4>
+<p><img alt="screen shot 2017-01-15 at 9 50 15 pm" src="https://cloud.githubusercontent.com/assets/6476108/21969491/beea4630-db6c-11e6-8913-7cc8813e35d6.png" /></p>
+<pre><code class="js">&lt;Tile
+   imageSrc={{require: ('./img/path')}}
+   title=&quot;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores dolore exercitationem&quot;
+   featured
+   caption=&quot;Some Caption Text&quot;
 /&gt;
-
 </code></pre>
 
-<h4 id="pricingcard-props">PricingCard props</h4>
+<h4 id="featured-tile-with-icon">Featured Tile with Icon</h4>
+<p><img alt="screen shot 2017-01-15 at 9 50 22 pm" src="https://cloud.githubusercontent.com/assets/6476108/21969581/6004e408-db6d-11e6-9379-556a0c5e967a.png" /></p>
+<pre><code class="js">&lt;Tile
+  imageSrc={{require: ('./img/path')}}
+  icon={{name: 'play-circle', type: 'font-awesome'}}
+  featured
+/&gt;
+</code></pre>
+
+<h4 id="tile-with-icon">Tile with Icon</h4>
+<p><img alt="screen shot 2017-01-15 at 9 50 34 pm" src="https://cloud.githubusercontent.com/assets/6476108/21969683/fce073f0-db6d-11e6-8d03-6e42c15627a9.png" /></p>
+<pre><code class="js">&lt;Tile
+  imageSrc={{require: ('./img/path')}}
+  title=&quot;Lorem ipsum dolor sit amet, consectetur&quot;
+  icon={{name: 'play-circle', type: 'font-awesome'}}  // optional
+  contentContainerStyle={{height: 70}}
+&gt;
+  &lt;View style={{flex: 1, flexDirection: 'row', justifyContent: 'space-between'}}&gt;
+    &lt;Text&gt;Caption&lt;/Text&gt;
+    &lt;Text&gt;Caption&lt;/Text&gt;
+  &lt;/View&gt;
+&lt;/Tile&gt;
+</code></pre>
+
+<h3 id="tile-props">Tile Props</h3>
 <table>
 <thead>
 <tr>
@@ -419,76 +486,94 @@
 </thead>
 <tbody>
 <tr>
+<td>icon</td>
+<td>none</td>
+<td>object {name: string, color: string, size: number, type: string (default is material, or choose one of material-community, simple-line-icon, zocial, font-awesome, octicon, ionicon, foundation, evilicon, or entypo), iconStyle: object(style)}</td>
+<td>Icon Component Props (optional)</td>
+</tr>
+<tr>
+<td>iconContainerStyle</td>
+<td>none</td>
+<td>object (style)</td>
+<td>Styling for the outer icon container (optional)</td>
+</tr>
+<tr>
 <td>title</td>
 <td>none</td>
 <td>string</td>
-<td>title (required)</td>
+<td>Text inside the tile (optional)</td>
 </tr>
 <tr>
-<td>price</td>
+<td>titleStyle</td>
+<td>none</td>
+<td>object (style)</td>
+<td>Styling for the title (optional)</td>
+</tr>
+<tr>
+<td>caption</td>
 <td>none</td>
 <td>string</td>
-<td>price (required)</td>
+<td>Text inside the tilt when tile is featured</td>
 </tr>
 <tr>
-<td>color</td>
+<td>captionStyle</td>
 <td>none</td>
-<td>string</td>
-<td>color scheme for button &amp; title (required)</td>
+<td>object (style)</td>
+<td>Styling for the caption (optional)</td>
 </tr>
 <tr>
-<td>info</td>
-<td>none</td>
-<td>array of strings</td>
-<td>pricing information (optional)</td>
-</tr>
-<tr>
-<td>button</td>
-<td>none</td>
-<td>object {title, icon, buttonStyle}</td>
-<td>button information (required)</td>
-</tr>
-<tr>
-<td>onButtonPress</td>
-<td>none</td>
-<td>any</td>
-<td>function to be run when button is pressed</td>
+<td>featured</td>
+<td>false</td>
+<td>boolean</td>
+<td>Changes the look of the tile (optional)</td>
 </tr>
 <tr>
 <td>containerStyle</td>
-<td>inherited styling</td>
+<td>none</td>
 <td>object (style)</td>
-<td>outer component styling (optional)</td>
+<td>Styling for the outer tile container (optional)</td>
 </tr>
 <tr>
-<td>wrapperStyle</td>
-<td>inherited styling</td>
+<td>imageSrc</td>
+<td>none</td>
+<td>object (image)</td>
+<td>Source for the image (required)</td>
+</tr>
+<tr>
+<td>imageContainerStyle</td>
+<td>none</td>
 <td>object (style)</td>
-<td>inner wrapper component styling (optional)</td>
+<td>Styling for the image (optional)</td>
 </tr>
 <tr>
-<td>titleFont</td>
-<td>System font (font weight 800) (iOS), Sans Serif Black (android)</td>
-<td>string</td>
-<td>specify title font family</td>
+<td>onPress</td>
+<td>none</td>
+<td>function (event)</td>
+<td>Function to call when tile is pressed (optional)</td>
 </tr>
 <tr>
-<td>pricingFont</td>
-<td>System font (font weight 700) (iOS), Sans Serif Bold (android)</td>
-<td>string</td>
-<td>specify pricing font family</td>
+<td>activeOpacity</td>
+<td>0.2</td>
+<td>number</td>
+<td>Number passed to control opacity on press (optional)</td>
 </tr>
 <tr>
-<td>infoFont</td>
-<td>System font bold (iOS), Sans Serif Bold (android)</td>
-<td>string</td>
-<td>specify pricing information font family</td>
+<td>contentContainerStyle</td>
+<td>none</td>
+<td>object (style)</td>
+<td>Styling for bottom container when not featured tile (optional)</td>
 </tr>
 <tr>
-<td>buttonFont</td>
-<td>System font (iOS), Sans Serif (android)</td>
-<td>string</td>
-<td>specify button font family</td>
+<td>width</td>
+<td>Device Width</td>
+<td>number</td>
+<td>Width for the tile (optional)</td>
+</tr>
+<tr>
+<td>height</td>
+<td>Device Width * 0.8</td>
+<td>number</td>
+<td>Height for the tile</td>
 </tr>
 </tbody>
 </table>
@@ -504,7 +589,7 @@
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid">
         
-          <a href="../lists/" title="Lists" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../tabbar/" title="Tabbar" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-flex__cell md-flex__cell--shrink">
               <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
             </div>
@@ -513,25 +598,11 @@
                 <span class="md-footer-nav__direction">
                   Previous
                 </span>
-                Lists
+                Tabbar
               </span>
             </div>
           </a>
         
-        
-          <a href="../searchbar/" title="Searchbar" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
-            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
-              <span class="md-flex__ellipsis">
-                <span class="md-footer-nav__direction">
-                  Next
-                </span>
-                Searchbar
-              </span>
-            </div>
-            <div class="md-flex__cell md-flex__cell--shrink">
-              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
-            </div>
-          </a>
         
       </nav>
     </div>
