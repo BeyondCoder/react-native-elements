@@ -1,5 +1,3 @@
-# React Native Elements UI Toolkit
-
 ![React Native Elements](http://i.imgur.com/Ok2KaWq.png)
 ## Cross Platform React Native UI Toolkit
 
@@ -7,42 +5,14 @@
 
 ## Get Started
 
-*If you are using Exponent, you can run `npm i react-native-elements --save` and skip to step 3.*
+- If you are using
+[create-react-native-app](github.com/react-community/create-react-native-app)
+or [Expo](https://expo.io), [follow these instructions](https://github.com/react-native-community/react-native-elements/blob/master/using-with-crna-or-expo.md).
 
-#### Step 1
+- If your project is a standard React Native project (if you have an
+ios/android directory and created it with `react-native init`), [follow these installation instructions](https://github.com/react-native-community/react-native-elements/blob/master/installation.md).
 
-Install react-native-vector-icons (if you do not already have it)
-
-`npm i react-native-vector-icons --save && react-native link react-native-vector-icons`
-
-*If you have any issues with icons not working or installation of React Native Vector Icons, check out their installation guide [here](https://github.com/oblador/react-native-vector-icons#installation)*
-
-#### Step 2
-
-Install React Native Elements
-
-`npm i react-native-elements --save`
-
-or
-
-`yarn add react-native-elements`
-
-#### Step 3
-
-Start using components
-
-```js
-import {
-  Button
-} from 'react-native-elements'
-
-<Button
-  raised
-  icon={{name: 'cached'}}
-  title='RAISED WITH ICON' />
-
-```
-## Features
+## Included
 - [x] [Buttons](https://github.com/react-native-community/react-native-elements#buttons)
 - [x] [Social Icons / Buttons](https://github.com/react-native-community/react-native-elements#social-icons--buttons)
 - [x] [Icons](https://github.com/react-native-community/react-native-elements#icons--icon-buttons)
@@ -59,14 +29,32 @@ import {
 - [x] [Pricing Component](https://github.com/react-native-community/react-native-elements#pricing-component)
 - [x] [Grid Component](https://github.com/react-native-community/react-native-elements#grid-component)
 - [x] [Slider Component](https://github.com/react-native-community/react-native-elements#slider-component)
+- [x] [Tile Component](https://github.com/react-native-community/react-native-elements#tile-component)
+- [x] [Avatar Component](https://github.com/react-native-community/react-native-elements#avatar-component)
 
 ## Roadmap
-- [ ] Add radio buttons
-- [ ] Searchable Drop Down similar to [Bootstrap-3-Typehead](https://github.com/bassjobsen/Bootstrap-3-Typeahead)
-- [ ] [Swipeable List Item component](https://github.com/jemise111/react-native-swipe-list-view)
-- [ ] Add icons to TextInputs
-- [ ] Profile Component `in progress`
-- [ ] Custom Picker
+
+#### IN PROGRESS
+- [ ] [Add Unit Tests](https://github.com/react-native-community/react-native-elements/issues/196)
+- [ ] [Create React Native Elements Website](https://github.com/react-native-community/react-native-elements/issues/43)
+
+#### FIRST CONTRIBUTORS
+- [ ] [Add Profile Component](https://github.com/react-native-community/react-native-elements/issues/129)
+- [ ] [Add Header Component](https://github.com/react-native-community/react-native-elements/issues/47)
+- [ ] [Add featuredTile prop in Tile](https://github.com/react-native-community/react-native-elements/issues/188)
+- [ ] [Add Badge Component](https://github.com/react-native-community/react-native-elements/issues/203)
+- [ ] Expose & document Divider Component
+- [ ] Refactor Social Icon to use Button
+
+#### NOT STARTED
+- [ ] [Floating labels on FormInput](https://github.com/react-native-community/react-native-elements/issues/94)
+- [ ] [Compatibility with react-native-web](https://github.com/react-native-community/react-native-elements/issues/110)
+- [ ] [Support Multiple FormInput refs](https://github.com/react-native-community/react-native-elements/issues/147)
+- [ ] [Two-Marker Slider](https://github.com/react-native-community/react-native-elements/issues/15)
+- [ ] [Add Notification Component](https://github.com/react-native-community/react-native-elements/issues/190)
+- [ ] [Add Image Component which supports parallax](https://github.com/react-native-community/react-native-elements/issues/203)
+- [ ] [Add DatePicker/Calendar Component](https://github.com/react-native-community/react-native-elements/issues/214)
+- [ ] [Add Theming & Default Styles](https://github.com/react-native-community/react-native-elements/issues/216)
 - [ ] Something you's like to see? Submit an [issue](https://github.com/dabit3/react-native-elements/issues) or a [pull request](https://github.com/dabit3/react-native-elements/pulls)
 
 ## Examples
@@ -75,7 +63,7 @@ Check out the pre built and configured [React Native Hackathon Starter Project](
 ## Notes
 
 #### Fonts
-React Native Elements uses the System font as the default font family for iOS and Roboto as the default font family for Android.
+React Native Elements uses the System font as the default font family for iOS and Sans Serif as the default font family for Android.
 
 **In the example screenshots, we are using Lato which can be downloaded [here](https://fonts.google.com/specimen/Lato?selection.family=Lato).**
 
