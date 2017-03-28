@@ -27,7 +27,7 @@ import { PricingCard } from 'react-native-elements'
 | onButtonPress | none | any | function to be run when button is pressed |
 | containerStyle | inherited styling | object (style) | outer component styling (optional) |
 | wrapperStyle | inherited styling | object (style) | inner wrapper component styling (optional) |
-| titleFont | System font (font weight 800) (iOS), Roboto-Black (android) | string | specify title font family |
-| pricingFont | System font (font weight 700) (iOS), Roboto-Bold (android) | string | specify pricing font family |
-| infoFont | System font bold (iOS), Roboto-Bold (android) | string | specify pricing information font family |
-| buttonFont | System font (iOS), Roboto (android) | string | specify button font family |
+| titleFont | System font (font weight 800) (iOS), Sans Serif Black (android) | string | specify title font family |
+| pricingFont | System font (font weight 700) (iOS), Sans Serif Bold (android) | string | specify pricing font family |
+| infoFont | System font bold (iOS), Sans Serif Bold (android) | string | specify pricing information font family |
+| buttonFont | System font (iOS), Sans Serif (android) | string | specify button font family |

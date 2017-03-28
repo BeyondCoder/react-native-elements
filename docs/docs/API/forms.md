@@ -7,7 +7,7 @@ import { FormLabel, FormInput } from 'react-native-elements'
 
 <FormLabel>Name</FormLabel>
 <FormInput onChangeText={someFunction}/>
-<FormValidationMessage>Error message</<FormValidationMessage>
+<FormValidationMessage>Error message</FormValidationMessage>
 ```
 
 #### FormValidationMessage example
@@ -31,7 +31,7 @@ import { FormLabel, FormInput } from 'react-native-elements'
 | ---- | ---- | ----| ---- |
 | containerStyle | none | object (style) | additional label container style (optional) |
 | labelStyle | none | object (style) | additional label styling (optional) |
-| fontFamily | System font bold (iOS), Roboto-Bold (android) | string | specify different font family |
+| fontFamily | System font bold (iOS), Sans Serif Bold (android) | string | specify different font family |
 
 #### FormValidationMessage props
 
@@ -39,11 +39,11 @@ import { FormLabel, FormInput } from 'react-native-elements'
 | ---- | ---- | ----| ---- |
 | containerStyle | none | object (style) | additional label container style (optional) |
 | labelStyle | none | object (style) | additional label styling (optional) |
-| fontFamily | System font bold (iOS), Roboto-Bold (android) | string | specify different font family |
+| fontFamily | System font bold (iOS), Sans Serif Bold (android) | string | specify different font family |
 
 #### Using FormInput refs
 
-```
+```js
 <FormInput
   ref='forminput'
   textInputRef='email'

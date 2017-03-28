@@ -17,8 +17,7 @@ import { Slider } from 'react-native-elements'
 </View>
 
 ```
-
-#### Slider Props
+## Slider Props
 
 prop                  | type     | optional | default                   | description
 --------------------- | -------- | -------- | ------------------------- | -----------
