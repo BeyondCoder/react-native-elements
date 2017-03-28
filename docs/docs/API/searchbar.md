@@ -1,6 +1,6 @@
 # Search Bar
 
-![Search Bar](http://i.imgur.com/QvSrF62.png)
+<img src="https://i.imgur.com/mvPgPfg.png" width="300" >
 
 ```js
 import { SearchBar } from 'react-native-elements'
@@ -47,3 +47,5 @@ import { SearchBar } from 'react-native-elements'
 | placeholder | '' | string | set the placeholder text |
 | placeholderTextColor | '#86939e' | string | set the color of the placeholder text |
 | onChangeText | none | function | method to fire when text is changed |
+| clearIcon | { color: '#86939e', name: 'search' } | object {name (string), color (string), style (object)} | specify color, styling, or another [Material Icon Name](https://design.google.com/icons/)
+(Note: pressing on this icon clears text inside the searchbar) |
